@@ -1,0 +1,12 @@
+2008/04/29 20:16:04	demo for Linda - Rusty
+2008/04/29 22:24:38	testing an update \- 
+2008/04/29 22:25:31	and with corrections to a typo or two.. - Rusty
+2008/04/29 22:37:33	Hey, the timestamps should be right now. found that ntp wasn\'t running on the server, corrected that. Note that log entries that are longer than the width of the field get wrapped in the output? - Rusty
+2008/04/29 22:46:23	If you have scripting enabled, in the upper right hand corner of the page there is a \'real time\' clock that uses your system time to derive a gmt or zulu clock. The timestamps are all GMT or UTC, so you can estimate how old a log entry is. - Rusty
+2008/04/29 23:07:24	Added a log \'viewer\' that doesn\'t allow editing at http://www.beresourceful.net/~rusty/mylog/ Unfortunately it does not wrap lines. - Rusty
+2008/04/30 00:34:06	Both the log viewer previous entry, and the log updater, refresh their view of the log every 10 min. If needed I can change that. - Rusty
+2008/04/30 00:34:45	You will also get the current log every time you submit a log entry. - Rusty
+2008/04/30 03:41:22	Also created an elog.php varient that can be used to simply add log entries w/o downloading the whole log. - Rusty
+2008/04/30 03:44:12	And updated it so that it would not load qlog.php but just elog.php. - Rusty
+2008/04/30 03:45:25	Cleaned up. - Rusty
+2008/04/30 03:58:00	Just demonstrating that it is not all that hard to enter some text by using a cell phone - Rusty via boost mobile phone

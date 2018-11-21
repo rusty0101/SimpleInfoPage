@@ -1,0 +1,50 @@
+// be sure to include the vertical bar | at the end of the message(s);
+
+var mContainer = "";
+var msgLength = 0;
+var circleMsg = "";
+var prevMsg = "";
+
+function updateMessage(){
+
+if (circleMsg == ""){circleMsg = mContainer.lastChild.data}
+else {circleMsg = prevMsg}
+var separatorIdx = circleMsg.lastIndexOf('|');
+if (separatorIdx == -1){separatorIdx = msgLength}
+circleMsg = circleMsg.substring(1,separatorIdx);
+var spliceStr = message.substring(0,msgLength-separatorIdx-1);
+var dispMsg = circleMsg+spliceStr;
+mContainer.removeChild(mContainer.lastChild);
+mContainer.appendChild(document.createTextNode(dispMsg));
+prevMsg = circleMsg+'|'+spliceStr;
+setTimeout("updateMessage()",speed);
+}
+
+function startCrawl(){
+
+mContainer.appendChild(document.createTextNode(message))
+setTimeout("updateMessage()",3000); // delay before crawl start;
+}
+
+onload=function(){
+
+mContainer = document.getElementById('crawl');
+document.getElementById('holder').style.width = useWidth;
+msgLength = message.length;
+startCrawl();
+}
+
+</script>
+</head>
+<body> 
+<span style="background-color=black;">
+
+<div id='holder' style='overflow:hidden;height:45px;border:1px solid black;font-size:28pt;background-color:black;color:cyan;position:relative;font-family:sans-serif;'>
+
+<div id='crawl' style='padding:3px;white-space:nowrap'>&nbsp
+</div>
+
+</div>
+</span>
+</body>
+</html>

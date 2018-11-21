@@ -1,0 +1,7 @@
+<html>
+<head>
+        <meta http-equiv=Refresh content="600;url=Crawl2.php">
+<script type="text/javascript">
+
+var useWidth = screen.width;
+var speed = 450 // greater is slower;
