@@ -19,8 +19,14 @@ being presented by the crawls at the top, or the bottom of the page. The only
 real difference between the two is what's in the qlog.txt file. Presumedly you 
 are looking for different content in each of these. There are two html files in 
 each directory. elog.html allows you to add log entries. qlog.html gives you
-the ability to remove entries as well. 
+the ability to remove entries as well. Depending on your needs, the result may
+be a simple log or journal program on it's own.
 
 The clock is a simple javascript clock. 
 
+The index.html and dindex.html files are essentially 'go away' files for users
+who attempt to just browse into the directory. It is presumed that you are going
+to run this in some variety of kiosk and that you will set it up to open a web
+browser full screen with the URL of the appropriate iframes or iframes2 file 
+that you want presented.
 
